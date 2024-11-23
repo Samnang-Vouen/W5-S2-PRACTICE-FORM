@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form_title">
+            Create Account
+        </div>
+        <form>
+            <div class="row1">
+                <div class="first-name">
+                    <label for="first-name">First Name*</label>
+                    <input type="text" id="first-name" placeholder="Enter your first name" required>
+                </div>
+                <div class="last-name">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <label for="email">Email*</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="row1">
+                <div class="password">
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="confirm-password">
+                    <label for="confirm-password">Confirm Password*</label>
+                    <input type="password" id="confirm-password" placeholder="Enter your password again" required>
+                </div>
+            </div>
+            <div class="row4">
+               <div class="gender">
+                    <div>
+                        <label>Gender:</label>
+                    </div>
+                    <div class="gender-radio">
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                    </div>
+               </div>
+                <div class="hobbies">
+                    <div>
+                        <label>Hobbies:</label>
+                    </div>
+                    <div class="hobbies-checkbox">
+                        <input type="checkbox" id="music" value="music">
+                        <label for="music">Music</label>
+                        <input type="checkbox" id="sports" value="sports">
+                        <label for="sports">Sports</label>
+                        <input type="checkbox" id="travel" value="travel">
+                        <label for="travel">Travel</label>
+                        <input type="checkbox" id="movies" value="movies">
+                        <label for="movies">Movies</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="income-source">
+                    <label for="income-source">Source of Income:</label>
+                    <select id="income-source">
+                    <option value="employed">Employed</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="student">Student</option>
+                </select>
+                </div>
+                <div class="income-range">
+                    <label for="income-range">Income:</label>
+                    <div class="income-adjust">
+                        <input type="range" id="income-range" min="0" max="20000" step="10000" value="10000">
+                        <span>12k</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row1">
+                <div>
+                    <label for="profile-pic">Upload Profile Picture:</label>
+                    <input type="file" id="profile-pic">
+                </div>
+                <div class="age">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" min="18" value="18">
+                </div>
+            </div>
+            <div class="row">
+                <label for="bio">Bio:</label>
+                <textarea id="bio" rows="15" placeholder="Write about yourself..."></textarea>
+            </div>
+        </form>
+        <div class="last">
+            <div class="last-row">
+                <button type="submit">Create</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
